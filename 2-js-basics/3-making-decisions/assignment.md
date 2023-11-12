@@ -38,3 +38,44 @@ let studentsWhoPass = [];
 | Criteria | Exemplary                      | Adequate                      | Needs Improvement               |
 | -------- | ------------------------------ | ----------------------------- | ------------------------------- |
 |          | Complete solution is presented | Partial solution is presented | Solution with bugs is presented |
+
+
+
+
+
+
+Solution:
+
+let allStudents = [
+  'A',
+  'B-',
+  1,
+  4,
+  5,
+  2
+]
+
+
+let studentsWhoPass = [];
+
+
+let passingNotes = [
+	3,
+	4,
+	5,
+	'A',
+	'A-',
+	'B',
+	'B-',
+	'C'
+]
+
+
+for (let i = 0; i < allStudents.length; i++) {
+  let currentNote = allStudents[i];
+
+  // Verifica si la nota actual está en la lista de notas aprobatorias
+  if (passingNotes.includes(currentNote)) {
+    studentsWhoPass.push(currentNote);
+  }
+}
