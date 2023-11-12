@@ -45,7 +45,7 @@ let studentsWhoPass = [];
 
 
 Solution:
-
+```
 let allStudents = [
   'A',
   'B-',
@@ -79,3 +79,8 @@ for (let i = 0; i < allStudents.length; i++) {
     studentsWhoPass.push(currentNote);
   }
 }
+
+
+
+
+```
